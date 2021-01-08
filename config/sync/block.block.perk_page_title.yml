@@ -1,0 +1,20 @@
+uuid: 56dd4435-e4b9-4bd6-890f-2c9955c8e012
+langcode: en
+status: true
+dependencies:
+  theme:
+    - perk
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: perk_page_title
+theme: perk
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

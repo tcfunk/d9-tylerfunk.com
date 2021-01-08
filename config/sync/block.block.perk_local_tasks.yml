@@ -1,0 +1,22 @@
+uuid: 2de37eb7-3351-4162-91d4-a83273905f7e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - perk
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: perk_local_tasks
+theme: perk
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
