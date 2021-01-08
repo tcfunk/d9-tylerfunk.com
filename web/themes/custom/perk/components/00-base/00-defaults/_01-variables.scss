@@ -5,10 +5,11 @@
  * and breakpoint related vars into
  * components/00-base/base/_breakpoints.css
 */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,400;0,800;1,400&family=Permanent+Marker&display=swap');
 
 // Fonts
-$font-body: georgia, times, 'Times New Roman', serif;
-$font-heading: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+$font-body: 'Overpass', sans-serif;
+$font-heading: 'Permanent Marker', cursive;
 
 // Spacing
 $space: 1rem;
