@@ -98,7 +98,7 @@ $settings['config_sync_directory'] = '../config/sync';
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
 
 /**
  * Deployment identifier.
@@ -597,12 +597,12 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # }
 
 $databases['default']['default'] = array (
-  'database' => 'drupal9',
-  'username' => 'drupal9',
-  'password' => 'drupal9',
+  'database' => getenv('DB_DATABASE'),
+  'username' => getenv('DB_USER'),
+  'password' => getenv('DB_PASSWORD'),
   'prefix' => '',
-  'host' => 'database',
-  'port' => '3306',
+  'host' => getenv('DB_HOST'),
+  'port' => getenv('DB_PORT'),
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
