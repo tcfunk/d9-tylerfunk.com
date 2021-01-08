@@ -2,3 +2,10 @@ name: tylerfunk.com
 recipe: drupal9
 config:
   webroot: web
+
+tooling:
+  drupal-settings:
+    service: appserver
+    description: Update the site settings file
+    cmd: cp /app/settings.php /app/web/sites/default/settings.php
+    user: root
